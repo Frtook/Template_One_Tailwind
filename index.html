@@ -1,0 +1,347 @@
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { 
+        theme: {
+          extend: {
+            colors: {
+              main: {
+                100: "#10cab7",
+              },
+            },
+            backgroundImage: {
+              hero: "url('./image/landing.webp')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div class="bg-hero bg-cover h-full w-full">
+      <div class="bg-white pb-2">
+        <div class="container m-auto flex justify-between pt-5 px-[20px]">
+          <img
+            class="w-10 h-5"
+            src="./image/logo.webp"
+            alt=""
+          />
+          <div class="nav relative">
+            <span class="flex flex-col gap-y-1">
+              <span class="self-end h-[2px] block w-5 bg-black"></span>
+              <span class="self-end h-[2px] block w-5 bg-black"></span>
+              <span class="self-end h-[2px] block w-5 bg-black"></span>
+            </span>
+            <ul
+              class="mt-4 bg-[#f6f6f6] p-2 w-48 absolute top-[20px] left-[-172px] hidden"
+            >
+              <i 
+                class="absolute top-[-20px] right-0 border-[10px] border-solid border-b-[#f6f6f6] border-x-transparent border-t-transparent"
+              ></i>
+                <a href="#serves"><li class="mb-2 transition-[500ms] border-b-2 p-2 hover:pl-5">Serves</li></a>
+                <a href="#profile"><li class="mb-2 transition-[500ms] border-b-2 p-2 hover:pl-5">Profile</li></a>
+                <a href="#about"><li class="mb-2 transition-[500ms] border-b-2 p-2 hover:pl-5">About Us</li></a>
+                <a href="#contact"><li class="mb-2 transition-[500ms] p-2 hover:pl-5">Contact Us</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Start hero -->
+      <div class="flex flex-col gap-4 items-center mt-40">
+        <p class="text-main-100 font-bold text-5xl">Hello There</p>
+        <p class="max-w-[300px] text-center bg-white/70 font-bold rounded-full p-3">
+          We are Leon - Super creative & Minimal Agency Web Template
+        </p>
+      </div>
+      <!-- end hero -->
+    </div>
+    <!-- End Header -->
+    <!-- start features -->
+    <!-- with flex  -->
+    <!-- <div class="container m-auto flex flex-col content-between items-center  md:flex-row md:flex-wrap lg:flex-row mt-20">
+            <div class="flex items-center flex-col w-1/2 lg:w-1/3  text-black">
+              <span class="text-main-100"><i class="fas fa-magic fa-3x"></i></span>
+              <h3 class="font-bold mt-4 text-center">Lorem ipsum dolor sit amet.</h3>
+              <p class="max-w-[250px] text-center mt-2 mb-8 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis!
+              </p>
+            </div>
+            <div class="flex items-center flex-col w-1/2 lg:w-1/3 ">
+              <span class="text-main-100"><i class="fas fa-gem fa-3x"></i></span>
+              <h3 class="font-bold mt-4 text-center">Lorem ipsum dolor sit amet.</h3>
+              <p class="max-w-[250px] text-center mt-2 mb-8 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis!
+              </p>
+            </div>
+            <div class="flex items-center flex-col w-1/2 lg:w-1/3 ">
+              <span class="text-main-100"><i class="fas fa-globe fa-3x"></i></span>
+              <h3 class="font-bold mt-4 text-center">Lorem ipsum dolor sit amet.</h3>
+              <p class="max-w-[250px] text-center mt-2 mb-8 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis!
+              </p>
+            </div>
+          </div> -->
+    <!-- with grid  -->
+    <div class="bg-[#f6f6f6]">
+      <div
+        class="container m-auto grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10 py-20"
+      >
+        <div class="text-center">
+          <span class="text-main-100"><i class="fas fa-magic fa-3x"></i></span>
+          <h3 class="font-bold text-xl p-5">Lorem ipsum dolor sit amet.</h3>
+          <p class="text-black/60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis!
+          </p>
+        </div>
+        <div class="text-center">
+          <span class="text-main-100"><i class="fas fa-gem fa-3x"></i></span>
+          <h3 class="font-bold text-xl p-5">Lorem ipsum dolor sit amet.</h3>
+          <p class="text-black/60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis!
+          </p>
+        </div>
+        <div class="text-center">
+          <span class="text-main-100"><i class="fas fa-globe fa-3x"></i></span>
+          <h3 class="font-bold text-xl p-5">Lorem ipsum dolor sit amet.</h3>
+          <p class="text-black/60">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end features -->
+    <!-- start services -->
+    <div id="serves" class="container m-auto pt-20 w-[80%]">
+      <div>
+        <p
+          class="text-gray-300 w-full text-6xl sm:text-8xl text-center font-bold"
+        >
+          services
+        </p>
+        <p class="text-center mt-[-10px] sm:mt-[-15px]">
+          Lorem ipsum dolor sit amet
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-items-center items-start justify-evenly gap-10 py-20"
+      >
+        <div
+          class="flex flex-col sm:justify-center sm:items-center gap-2 sm:flex-row"
+        >
+          <div class="self-center sm:self-start px-3 text-main-100">
+            <i class="fas fa-palette fa-2x"></i>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center text-center sm:justify-start sm:items-start sm:text-left"
+          >
+            <h2 class="font-bold pb-4">Graphic Design</h2>
+            <p>
+              Graphic design is the process of visual communication and
+              problem-solving using one or more of typography, photography and
+              illustration.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:justify-center sm:items-center gap-2 sm:flex-row"
+        >
+          <div class="self-center sm:self-start px-3 text-main-100">
+            <i class="fas fa-vector-square fa-2x"></i>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center text-center sm:justify-start sm:items-start sm:text-left"
+          >
+            <h2 class="font-bold pb-4">Web Design</h2>
+            <p>
+              Web design encompasses many different skills and disciplines in
+              the production and maintenance of websites.
+            </p>
+          </div>
+        </div>
+        <div
+          class="row-span-2 w-[260px] xl:block hidden relative before:absolute before:top-[-50px] before:right-[-40px] before:w-20 before:h-[130%] before:z-[-1] before:bg-gray-700 before:content-['']"
+        >
+          <img
+            class=""
+            src="./image/services.webp"
+            alt=""
+          />
+        </div>
+        <div
+          class="flex flex-col sm:justify-center sm:items-center gap-2 sm:flex-row"
+        >
+          <div class="self-center sm:self-start px-3 text-main-100">
+            <i class="fab fa-sketch fa-2x"></i>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center text-center sm:justify-start sm:items-start sm:text-left"
+          >
+            <h2 class="font-bold pb-4">UI & UX</h2>
+            <p>
+              Process of enhancing user satisfaction with a product by improving
+              the usability, accessibility, and pleasure provided in the
+              interaction.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:justify-center sm:items-center gap-2 sm:flex-row"
+        >
+          <div class="self-center sm:self-start px-3 text-main-100">
+            <i class="fas fa-pencil-ruler fa-2x"></i>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center text-center sm:justify-start sm:items-start sm:text-left"
+          >
+            <h2 class="font-bold pb-4">Web Development</h2>
+            <p>
+              Web development is a broad term for the work involved in
+              developing a web site for the Internet or an intranet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end services -->
+    <!-- start profile -->
+    <div id="profile" class="pb-20">
+      <p
+        class="text-gray-300 w-full text-6xl sm:text-8xl text-center font-bold"
+      >
+        profile
+      </p>
+      <p class="text-center mt-[-10px] sm:mt-[-15px]">
+        Lorem ipsum dolor sit amet
+      </p>
+    </div>
+    <div class="bg-[#f6f6f6] py-10">
+      <div class="container m-auto w-[80%]">
+        <div
+          class="grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] grid-cols-[repeat(1,minmax(200px,1fr))] gap-10"
+        >
+          <div class="bg-white">
+            <img
+              class="max-w-full"
+              src="./image/portfolio-1.webp"
+              alt="profile"
+            />
+            <div class="p-5">
+              <p class="font-bold">Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum facilis nesciunt debitis.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white">
+            <img
+              class="max-w-full"
+              src="./image/portfolio-2.webp"
+              alt="profile"
+            />
+            <div class="p-5">
+              <p class="font-bold">Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum facilis nesciunt debitis.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white">
+            <img
+              class="max-w-full"
+              src="./image/portfolio-3.webp"
+              alt="profile"
+            />
+            <div class="p-5">
+              <p class="font-bold">Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum facilis nesciunt debitis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end profile -->
+    <!-- start about -->
+    <div id="about" class="py-20">
+      <p
+        class="text-gray-300 w-full text-6xl sm:text-8xl text-center font-bold"
+      >
+        about
+      </p>
+      <p class="text-center mt-[-10px] sm:mt-[-15px]">
+        Lorem ipsum dolor sit amet
+      </p>
+    </div>
+    <div class="container w-[90%] m-auto pb-20">
+      <div class="flex lg:flex-row flex-col lg:justify-around justify-center items-center gap-y-24 max-w-full ">
+        <div class="w-[250px] h-[375px] relative after:absolute after:w-[50px] after:h-[120%] after:bg-[#f6f6f6] after:top-[-35px] after:left-[-25px] after:z-[-1] before:absolute before:w-[100px] before:h-[80%] before:border-b-[80px] before:border-l-main-100 before:border-l-[80px] before:border-b-main-100 before:top-[-35px] before:right-[-45px] before:z-[-1] ">
+          <img 
+            class="max-w-full "
+            src="./image/about.webp"
+            alt="about"
+          />
+        </div>
+        <div class="max-w-xl flex flex-col justify-center">
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            doloremque voluptatem. In officiis architecto provident temporibus
+            nisi earum sunt vitae. Architecto quia quod optio placeat odio,
+            consequuntur officiis praesentium ratione animi aliquam quae nihil.
+            Odio!
+          </p>
+          <span class="w-48 h-1 block mt-10 mb-4 bg-main-100"></span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ut?
+            Ducimus recusandae delectus iste autem laborum aspernatur atque
+            iusto officiis. Culpa rem est minima eaque, officiis ipsam placeat
+            eveniet unde commodi optio, minus voluptatem ea reprehenderit,
+            temporibus eligendi et ex.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    <!-- start Contact -->
+    <div id="contact" class="py-20 bg-[#f6f6f6]">
+      <div class="container m-auto w-[80%]">
+        <div>
+          <p
+            class="text-gray-300 w-full text-6xl sm:text-8xl text-center font-bold"
+          >
+            contact
+          </p>
+          <p class="text-center mt-[-10px] sm:mt-[-15px]">
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="text-2xl flex justify-center items-center flex-col pt-20">
+          <p class="font-bold">Lorem ipsum dolor sit amet.</p>
+          <p class="text-main-100 font-bold">leoagency@mail.com</p>
+          <div class="flex text-[14px] ">
+            <p class="pr-2">Lorem ipsum dolor sit.</p>
+            <span class="self-center pr-2"><i class="fa-brands fa-youtube"></i></span>
+            <span class="self-center pr-2"><i class="fa-brands fa-facebook-f"></i></span>
+            <span class="self-center pr-2"><i class="fa-brands fa-twitter"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Contact -->
+    <!-- start footer -->
+    <div class="bg-gray-700 text-center text-white p-5 ">
+      <p>&copy; 2021 <span class="text-main-100 font-bold">leon </span>All Right Reserved</p>
+    </div>
+    <!-- end footer -->
+  </body>
+</html>
